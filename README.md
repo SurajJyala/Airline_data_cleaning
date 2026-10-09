@@ -1,34 +1,21 @@
-# Airline_data_cleaning
-Airline data cleaning and analysis using python, pandas and numpy
-# Airline Data Cleaning using Python and Pandas
+# Airline Data Cleaning Project
 
-## Project Overview
+A Python and Pandas project focused on cleaning an airline dataset containing 103,000 records and 13 columns.
 
-This project focuses on cleaning and preparing airline data using Python and Pandas.
+## Project Highlights
 
-## Tools Used
+- Missing value identification and imputation
+- Duplicate record removal
+- Data quality assessment
+- Cleaned dataset export to CSV
 
-* Python
-* Pandas
-* NumPy
-* VS CODE
+## Technologies
+Python | Pandas | NumPy | Jupyter Notebook
 
-## Data Cleaning Tasks
+## Repository Contents
+- `pandas.ipynb` — Data cleaning notebook
+- `results.md` — Project methodology and initial data quality findings
+- Cleaned CSV dataset — Final deliverable, when included in the repository
 
-* Handling missing values
-* Removing duplicate records
-* Correcting data types
-* Cleaning flight-related columns
-* Preparing data for further analysis
-
-## Dataset Columns
-
-Airline, Aircraft_Type, Origin, Destination, Flight_Number, Distance_km, Ticket_Price, Duration_hours, Fuel_Cost.
-
-## Project Goal
-
-To improve data quality and prepare airline data for reliable analysis.
-
-## Author
-
-Suraj Singh
+## View the Project
+Open `pandas.ipynb` to review the code and `results.md` to understand the cleaning process and findings.
