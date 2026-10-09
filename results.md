@@ -1,15 +1,30 @@
-# Airline Data Cleaning and Quality Assessment
+# Airline Data Cleaning Using Python and Pandas
 
-## Project Overview
-This project uses Python, Pandas, and NumPy to inspect, clean, and prepare airline data for analysis.
+## 1. Project Overview
 
-## Dataset Summary
-- **Total Records:** 103,000
-- **Total Columns:** 13
-- **Columns with Missing Values:** 5
-- **Total Missing Cells:** 17,471
+This project focuses on cleaning and preparing an airline dataset containing 103,000 records and 13 columns using Python, Pandas, and NumPy.
 
-## Data Quality Assessment
+The objective was to improve data quality by handling missing values, removing duplicate records, and preparing the dataset for further analysis.
+
+## 2. Dataset Description
+
+The dataset contains flight-related information, including:
+
+- Flight number and airline
+- Aircraft type
+- Origin and destination
+- Flight date
+- Flight distance and duration
+- Ticket price and fuel cost
+- Weather conditions
+- Flight delays
+- Passenger count
+
+**Original dataset size:** 103,000 rows × 13 columns
+
+## 3. Initial Data Quality Assessment
+
+The initial inspection identified missing values in five numerical columns.
 
 | Column | Missing Values | Missing Percentage |
 |---|---:|---:|
@@ -18,28 +33,49 @@ This project uses Python, Pandas, and NumPy to inspect, clean, and prepare airli
 | Fuel_Cost | 3,081 | 2.99% |
 | Distance_km | 3,077 | 2.99% |
 | Delay_minutes | 2,061 | 2.00% |
+| **Total** | **17,471** | **1.34% of all cells** |
 
-The remaining eight columns contain no missing values.
+The dataset contained 1,339,000 total cells before cleaning.
 
-## Tools and Technologies
+## 4. Data Cleaning Process
+
+The following steps were performed:
+
+1. Inspected the dataset structure, columns, and data types.
+2. Identified missing values and examined their distribution.
+3. Filled missing values in the affected columns using appropriate imputation methods.
+4. Identified and removed duplicate records.
+5. Prepared the cleaned dataset for subsequent analysis.
+6. Exported the cleaned dataset to CSV format.
+
+## 5. Tools and Technologies
+
 - Python
 - Pandas
 - NumPy
-- VS CODE
+- Jupyter Notebook
+- CSV
 
-## Key Findings
-- Identified missing values across five numerical columns.
-- Found that Ticket_Price has the highest number of missing values.
-- Inspected column data types and dataset structure.
-- Identified data quality issues requiring further preprocessing.
+## 6. Project Deliverables
 
-## Project Files
-- `pandas.ipynb` — Notebook containing the analysis code.
-- `README.md` — Project introduction and overview.
-- `results.md` — Dataset summary and data quality findings.
+- **pandas.ipynb:** Python notebook containing the data cleaning and analysis workflow.
+- **results.md:** Dataset overview, initial data quality findings, and cleaning methodology.
+- **Cleaned CSV:** Exported dataset prepared for further analysis.
 
-## Next Steps
-Handle missing values using appropriate methods, validate duplicate records, standardize data types, and verify the final cleaned dataset.
+## 7. Final Outcome
+
+The project transformed the original airline dataset into a cleaned, structured dataset by addressing missing values and removing duplicate records.
+
+The exported CSV can be used for further exploratory data analysis, reporting, and visualization.
+
+## 8. Future Improvements
+
+- Validate the final dataset for remaining missing values and duplicates.
+- Compare record counts before and after cleaning.
+- Perform exploratory data analysis on airline performance, routes, ticket prices, and flight delays.
 
 ## Author
+
 Suraj Singh
+
+**Skills Demonstrated:** Python, Pandas, NumPy, Data Cleaning, Missing Value Imputation, Duplicate Removal, CSV Export.
